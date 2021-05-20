@@ -7,7 +7,7 @@ app.use(express.json())
 
 // SET UP MONGOOSE
 const mongoose = require('mongoose')
-const connectionString = 'mongodb+srv://lekandev:<password>@cluster0.sbgkm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const connectionString = 'mongodb+srv://lekandev:bookstore@cluster0.sbgkm.mongodb.net/bookStoreDb?retryWrites=true&w=majority'
 
 mongoose.connect(connectionString, {
     useNewUrlParser: true,
