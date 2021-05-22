@@ -1,6 +1,6 @@
 // SET UP MONGOOSE
 const mongoose = require('mongoose')
-const connectionString = 'mongodb+srv://lekandev:bookstore@cluster0.sbgkm.mongodb.net/bookStoreDb?retryWrites=true&w=majority'
+const connectionString = process.env.DB_URL
 
 module.exports = function() {
     mongoose.connect(connectionString, {
