@@ -54,7 +54,7 @@ exports.fetchSingleBook = (req, res) => {
     //     } else {
     //         return res.status(200).json({book})
     //     }
-    // })
+    // });
     Book.findById(req.params.id, (err, book) => {
         if (err) {
             return res.status(500).json({message: err})
