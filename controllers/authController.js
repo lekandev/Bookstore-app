@@ -74,7 +74,7 @@ exports.loginUser = (req, res) => {
         }
         // send token to user
         return res.status(200).json({
-            message: "use logged in",
+            message: "user logged in",
             token
         })
         
