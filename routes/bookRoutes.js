@@ -11,7 +11,7 @@ router.get('/books', authenticateUser, BookCtrl.fetchBooks)
 router.get('/books/:id', authenticateUser, BookCtrl.fetchSingleBook)
 // PUT request to /books/:id to update a single book
 router.put('/books/:id', authenticateUser, checkIfAdmin, BookCtrl.updateSingleBook)
-//DELETE request to /books/:id to delete a single book
+// DELETE request to /books/:id to delete a single book
 router.delete('/book/:id', authenticateUser, checkIfAdmin, BookCtrl.deleteSingleBook)
 
 module.exports = router
